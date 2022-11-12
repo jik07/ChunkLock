@@ -240,13 +240,13 @@ public class Events implements Listener {
         }
     }
 
-    @EventHandler
-    public void OnEntitySpawn(EntitySpawnEvent e) {
-        if (!ChunkManager.active) return;
+    // @EventHandler
+    // public void OnEntitySpawn(EntitySpawnEvent e) {
+    //     if (!ChunkManager.active) return;
 
-        if (!ChunkManager.isUnlocked(e.getLocation().getChunk())) {
-            e.setCancelled(true);
-        }
-    }
+    //     if (!ChunkManager.isUnlocked(e.getLocation().getChunk())) {
+    //         e.setCancelled(true);
+    //     }
+    // }
 
 }

@@ -20,6 +20,8 @@ public class Commands implements CommandExecutor {
 			sender.sendMessage("Only players can use that command!");
 			return true;
 		}
+
+        if (!sender.isOp()) return true;
 		
 		Player p = (Player) sender;
     
